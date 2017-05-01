@@ -23,12 +23,14 @@ public class Car {
 	private Makes makes;
 
 	//needed?  feel strange	????????
+	/*
 	public Car(){
 		this.year = null;
 		this.color = null;
 		this.price = null;
-		Make this.makes = new Make;
+		Makes this.makes = new Makes;
 	}
+	*/
 
 	//	Accessor
 	public String getYear(){
@@ -73,6 +75,7 @@ public class Car {
 		"\nColor:\t\t" + color +
 		"\nPrice:\t\t" + price +
 		"\n\n";
+		return descrip;
 	}
 
 }

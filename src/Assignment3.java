@@ -38,7 +38,7 @@ public class Assignment3
        String line = new String();
 
        // instantiate a Make object
-       Make make1 = new Make();
+       Makes make1 = new Makes();
        printMenu();
 
        //Create a Scanner object to read user input
