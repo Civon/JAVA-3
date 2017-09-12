@@ -12,25 +12,26 @@
  * @project 405530018_3_objectInstacemethodEncapsulation
  * @date 2017-04-27
  */
-public class Car {
+
 	/**
-	* 
+	* Encapsulate car information & have a set of get, set
+	* CANT direct initial attibute when intance
 	*/
+public class Car {
 	//	Attribute
 	private String year;
 	private String color;
 	private double price;
 	private Makes makes;
-
-	//needed?  feel strange	????????
-	/*
+	
+	// Constructor
 	public Car(){
 		this.year = null;
 		this.color = null;
-		this.price = null;
-		Makes this.makes = new Makes;
+		this.price = 0;
+		//this.makes = null;
+		this.makes = new Makes();
 	}
-	*/
 
 	//	Accessor
 	public String getYear(){
@@ -66,11 +67,13 @@ public class Car {
 		return;
 	}
 
+	/**descripe of all attribute*/
 	public String toString(){
 		String descrip = 
-		"\nCountry:\t" + makes.getCountry() +
+		/*"\nCountry:\t" + makes.getCountry() +
 		"\nManufacurer:\t" + makes.getManufac() +
-		"\nBrand:\t\t" + makes.getBrand() +
+		"\nBrand:\t\t" + makes.getBrand() +*/
+		makes.toString() +
 		"\nYear:\t\t" + year +
 		"\nColor:\t\t" + color +
 		"\nPrice:\t\t" + price +

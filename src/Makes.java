@@ -12,10 +12,11 @@
  * @project 405530018_3_objectInstacemethodEncapsulation
  * @date 2017-04-27
  */
-public class Makes {
+	
 	/**
-	* 
+	* Encapsulate making information & have a series of get, set  
 	*/
+public class Makes {
 	//	Attribute
 	private String country;
 	private String manufacturer;
@@ -38,7 +39,7 @@ public class Makes {
 		return brandName;
 	}
 
-	//	Autator
+	//	Mutator
 	public void setCountry(String nCountry){
 		country = nCountry;
 		return;
@@ -53,11 +54,12 @@ public class Makes {
 	}
 
 	//	Method
+	/**descripe of all attribute*/
 	public String toString(){
 		String descrip = 
 			"\nCountry:\t" + country + 
 			"\nManufacturer:\t" + manufacturer +
-			"\nBrand:\t\t" + brandName + "\n";
+			"\nBrand:\t\t" + brandName;
 		return descrip;
 	}
 
